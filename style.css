@@ -1,0 +1,424 @@
+:root {
+    --bg-color: #f4f6f9;
+    --header-bg: #ffffff;
+    --card-bg: #ffffff;
+    --container-bg: #ffffff;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --accent-color: #00adf2;
+    --accent-hover: #0088be;
+    --border-color: rgba(0, 0, 0, 0.08);
+    --shadow-color: rgba(0, 0, 0, 0.08);
+    --input-bg: #f8fafc;
+}
+
+body.dark-mode {
+    --bg-color: #0c1322;
+    --header-bg: #070b14;
+    --card-bg: #1e293b;
+    --container-bg: #0f172a;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --accent-color: #00adf2;
+    --accent-hover: #38bdf8;
+    --border-color: rgba(255, 255, 255, 0.08);
+    --shadow-color: rgba(0, 0, 0, 0.4);
+    --input-bg: #1e293b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 40px auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--accent-color);
+    font-size: 1.6em;
+}
+
+/* Header & Nav */
+header {
+    background-color: var(--header-bg);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 20px var(--shadow-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.3s ease;
+}
+
+.logo img {
+    height: 48px;
+    width: auto;
+    border-radius: 6px;
+    display: block;
+}
+
+.navigation {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    user-select: none;
+}
+
+.navigation a {
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.navigation a.active, .navigation a:hover {
+    color: var(--accent-color);
+    background-color: rgba(0, 173, 242, 0.1);
+}
+
+/* Container & Cards */
+.container {
+    position: relative;
+    max-width: 1200px;
+    width: 92%;
+    margin: 0 auto;
+    padding: 24px;
+    background: var(--container-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+#since-style h3, h2{
+    color: #38bdf8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#since-style p{
+    font-size: large;
+}
+
+#since-style{
+    display: grid;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.since-card{
+    background: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+    
+}
+
+
+
+/* Slide Image Carousel Styling */
+.slides {
+    width: 100%;
+    height: 400px; 
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.slide.active {
+    display: block; 
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    padding: 12px 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s;
+    z-index: 40%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: var(--accent-color);
+}
+
+.prev-btn {
+    left: 35px;
+}
+
+.next-btn {
+    right: 35px;
+}
+
+.theme-btn {
+    background: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+}
+
+.theme-btn:hover {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    transform: scale(1.08);
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+.hero-section h1 {
+    font-size: 2.2em;
+    margin-bottom: 8px;
+}
+
+.hero-section p {
+    color: var(--text-secondary);
+    font-size: 1.1em;
+}
+
+.hero-banner-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 173, 242, 0.2);
+}
+
+.img-box {
+    width: 100%;
+    height: 180px;
+    background-color: #eee;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+figcaption {
+    padding: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Forms (Service & Contact) */
+#form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--input-bg);
+    color: var(--text-primary);
+    font-size: 1em;
+    outline: none;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--accent-color);
+}
+
+.submit-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.05em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: var(--accent-hover);
+}
+
+/* About & Contact Layouts */
+.about-content, .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.about-img-box img, .map-img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.about-card {
+    padding: 20px;
+}
+
+.about-card h3 {
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+/* Footer Container */
+#FtConatiner {
+    background-color: var(--header-bg);
+    color: var(--text-secondary);
+    max-width: 1200px;
+    width: 92%;
+    margin: 40px auto 0;
+    padding: 35px 25px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    border: 1px solid var(--border-color);
+}
+
+#FtConatiner h3 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+#FtConatiner ol li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#FtConatiner ol li ion-icon {
+    color: var(--accent-color);
+}
+
+footer, #foot {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    color: var(--text-secondary);
+    font-size: 0.85em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about-content, .contact-grid, #FtConatiner {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Linn IT Solution Co., Ltd.</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.jpg" alt="Linn IT Solution Logo"></a>
+        </div>
+        <nav class="navigation">
+            <a href="index.html"><ion-icon name="home"></ion-icon>Home</a>
+            <a href="about.html"><ion-icon name="people"></ion-icon>About Us</a>
+            <a href="service.html" class="active"><ion-icon name="flash"></ion-icon>Services</a>
+            <a href="contact.html"><ion-icon name="mail"></ion-icon>Contact</a>
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                <ion-icon name="moon-outline" id="theme-icon"></ion-icon>
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <h1>Our Professional Services</h1>
+        <p>Submit your service request online and track repairs easily</p>
+    </section>
+
+    <main class="container">
+        <div class="services-grid">
+            <figure class="card">
+                <div class="img-box">
+                    <img src="images/service.jpg" alt="Computer Service" onerror="this.src='https://via.placeholder.com/300x180?text=Computer+Service'">
+                </div>
+                <a href="https://linncomputer.com/"><figcaption>Computer Service (System Service)</figcaption></a>
+            </figure>
+
+            <figure class="card">
+                <div class="img-box">
+                    <img src="images/mobile_service.jpg" alt="Mobile Phone Service" onerror="this.src='https://via.placeholder.com/300x180?text=Mobile+Service'">
+                </div>
+                <a href="https://linncomputer.com/"><figcaption>Mobile Phone Service</figcaption></a>
+            </figure>
+
+            <figure class="card">
+                <div class="img-box">
+                    <img src="images/cctv_service.jpg" alt="CCTV Service" onerror="this.src='https://via.placeholder.com/300x180?text=CCTV+Service'">
+                </div>
+                <a href="https://linncomputer.com/"><figcaption>CCTV Service</figcaption></a>
+            </figure>
+
+            <figure class="card">
+                <div class="img-box">
+                    <img src="images/printer_service.jpg" alt="Printer Service" onerror="this.src='https://via.placeholder.com/300x180?text=Printer+Service'">
+                </div>
+                <a href="https://linncomputer.com/"><figcaption>Printer Service</figcaption></a>
+            </figure>
+        </div>
+    </main>
+
+    <hr>
+
+    <main class="container Service-contect">
+        <h2 class="section-title">Service Request Form</h2>
+
+        <form id="form-container">
+            <div id="form-grid">
+                <div class="form-group">
+                    <label for="date">Date & Time</label>
+                    <input type="date" id="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="itemname">Item Name</label>
+                    <select id="itemname" required>
+                        <option value="">Select Item...</option>
+                        <option value="Computer">Computer</option>
+                        <option value="Laptop">Laptop</option>
+                        <option value="CCTV">CCTV</option>
+                        <option value="PC">PC</option>
+                        <option value="Projector">Projector</option>
+                        <option value="Mobile Phone">Mobile Phone</option>
+                        <option value="Printer">Printer</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="qty">Quantity</label>
+                    <input type="number" id="qty" min="1" placeholder="Enter Qty" required>
+                </div>
+
+                <div class="form-group">            
+                    <label for="error-type">Error Condition</label>
+                    <select id="error-type" required>
+                        <option value="">Please Select Condition</option>
+                        <option value="Hardware">Hardware Error</option>
+                        <option value="System">System/Software Error</option>
+                        <option value="Both">Both Hardware & Software</option>
+                    </select>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="remark">Remark (Optional)</label>
+                    <input type="text" id="remark" placeholder="Describe the issue in detail...">
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Request</button>
+        </form>
+    </main>
+
+    <div id="FtConatiner">
+        <div>
+            <h3>HEAD OFFICE</h3>
+            <ol>
+                <li><ion-icon name="call"></ion-icon>09 788 788 778</li>
+                <li><ion-icon name="location"></ion-icon>No.14/585, 4th Street, Paung Laung Quarter, Pyinmana.</li>
+                <li><ion-icon name="mail"></ion-icon>hello@linn.com.mm</li>
+                <li><ion-icon name="time"></ion-icon>Opening Hours: 8:00 AM-8:00 PM</li>
+            </ol>
+        </div>
+
+        <div>
+            <h3>USEFUL LINKS</h3>
+            <ol>
+                <li><ion-icon name="checkmark-sharp"></ion-icon><a href="https://linncomputer.com/apple-warranty.html" target="_blank">Apple Warranty Terms & Conditions</a></li>
+                <li><ion-icon name="checkmark-sharp"></ion-icon><a href="https://linncomputer.com/giftcard.html" target="_blank">Gift Card</a></li>
+                <li><ion-icon name="checkmark-sharp"></ion-icon><a href="https://linncomputer.com/privacy-policy.html" target="_blank">Privacy Policy</a></li>
+                <li><ion-icon name="checkmark-sharp"></ion-icon><a href="https://linncomputer.com/user-guide.html" target="_blank">Linn IT Mart App User Guide</a></li>
+                <li><ion-icon name="checkmark-sharp"></ion-icon><a href="https://linncomputer.com/services.html" target="_blank">Our Service</a></li>
+            </ol>
+        </div>
+
+        <div>
+            <h3>BRANCHES</h3>
+            <ol>
+                <li><ion-icon name="location"></ion-icon>No.11/17, Bogyoke Road, Pyinmana</li>
+                <li><ion-icon name="location"></ion-icon>No.117, Thapyaegone Quarter, Nay Pyi Taw</li>
+                <li><ion-icon name="location"></ion-icon>Pa.(231), Myoma Market, Naypyitaw</li>
+                <li><ion-icon name="location"></ion-icon>No.OS-16, Nyarna Dipa Quarter, Ottarathiri Township</li>
+            </ol>
+        </div>
+    </div>
+
+    <footer id="foot">
+        Copyright &copy;2026 Linn IT Solution Co.,Ltd. All Rights Reserved.
+        <p>nanhtikelwin@gmail.com</p>
+    </footer>
+
+    <script src="project.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

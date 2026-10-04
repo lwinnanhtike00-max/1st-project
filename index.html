@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Linn IT Solution Co., Ltd.</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.jpg" alt="Linn IT Solution Logo"></a>
+        </div>
+        <nav class="navigation">
+            <a href="index.html" class="active"><ion-icon name="home" id="home-icon"></ion-icon>Home</a>
+            <a href="about.html"><ion-icon name="people" id="about-icon"></ion-icon>About Us</a>
+            <a href="service.html"><ion-icon name="flash" id="service-icon"></ion-icon>Services</a>
+            <a href="contact.html"><ion-icon name="mail" id="contact-icon"></ion-icon>Contact</a>
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                <ion-icon name="moon-outline" id="theme-icon"></ion-icon>
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <h1>Welcome to Linn IT Solution Co., Ltd.</h1>
+        <p>Our Products & Professional Services</p>
+    </section>
+
+    <div class="container">
+    <div class="slides">
+        <div class="slide active">
+            <img src="images/shop2.jpg" alt="Main Promo Banner">
+        </div>
+        <div class="slide">
+            <img src="images/linn.jpg" alt="Main Promo Banner">
+        </div>
+        <div class="slide">
+            <img src="images/linnimage - Copy.jpg" alt="Main Promo Banner">
+        </div>
+        <div class="slide">
+            <img src="images/linnimage.jpg" alt="Main Promo Banner">
+        </div>
+    </div>
+    <button class="prev-btn" onclick="moveSlide(-1)"><ion-icon name="chevron-back-outline"></ion-icon></button>
+    <button class="next-btn" onclick="moveSlide(1)"><ion-icon name="chevron-forward-outline"></ion-icon></button>
+</div>
+
+    <main class="container">
+        <h2 class="section-title">Our Services & Products</h2>
+        <div class="services-grid">
+            <figure class="card">
+                <div class="img-box">
+                    <img src="images/linn.jpg" alt="Mobile Sale" onerror="this.src='https://via.placeholder.com/300x180?text=Mobile+Sale'">
+                </div>
+                <a href="https://linncomputer.com/"><figcaption>Mobile Sale</figcaption></a>
+            </figure>
+
+            <figure class="card">
+                <div class="img-box">
+                    <img src="images/it-sale.jpg - Copy.jpg" alt="IT Sale" onerror="this.src='https://via.placeholder.com/300x180?text=IT+Sale'">
+                </div>
+                <a href="https://linncomputer.com/"><figcaption>IT Sale</figcaption></a>
+            </figure>
+
+            <figure class="card">
+                <div class="img-box">
+                    <img src="images/ele.jpg" alt="Electronic Sale" onerror="this.src='https://via.placeholder.com/300x180?text=Electronic+Sale'">
+                </div>
+                <a href="https://linncomputer.com/"><figcaption>Electronic Sale</figcaption></a>            
+            </figure>
+
+            <figure class="card">
+                <div class="img-box">
+                    <img src="images/service.jpg" alt="Computer Service" onerror="this.src='https://via.placeholder.com/300x180?text=Computer+Service'">
+                </div>
+                <a href="https://linncomputer.com/"><figcaption>Computer Service (System Service)</figcaption></a>
+            </figure>
+
+            <figure class="card">
+                <div class="img-box">
+                    <img src="images/mobile_service.jpg" alt="Mobile Phone Service" onerror="this.src='https://via.placeholder.com/300x180?text=Mobile+Service'">
+                </div>
+                <a href="https://linncomputer.com/"><figcaption>Mobile Phone Service</figcaption></a>
+            </figure>
+
+            <figure class="card">
+                <div class="img-box">
+                    <img src="images/cctv_service.jpg" alt="CCTV Service" onerror="this.src='https://via.placeholder.com/300x180?text=CCTV+Service'">
+                </div>
+                <a href="https://linncomputer.com/"><figcaption>CCTV Service</figcaption></a>
+            </figure>
+
+            <figure class="card">
+                <div class="img-box">
+                    <img src="images/printer_service.jpg" alt="Printer Service" onerror="this.src='https://via.placeholder.com/300x180?text=Printer+Service'">
+                </div>
+                <a href="https://linncomputer.com/"><figcaption>Printer Service</figcaption></a>
+            </figure>
+        </div>
+    </main>
+
+    <hr>
+
+    <main id="FtConatiner">
+        <div id="info1">
+            <h3>HEAD OFFICE</h3>
+            <ol>
+                <li><ion-icon name="call"></ion-icon>09 788 788 778</li>
+                <li><ion-icon name="location"></ion-icon>No.14/585, 4th Street, Paung Laung Quarter, Pyinmana.</li>
+                <li><ion-icon name="mail"></ion-icon>hello@linn.com.mm</li>
+                <li><ion-icon name="time"></ion-icon>Opening Hours: 8:00 AM-8:00 PM</li>
+            </ol>
+        </div>
+
+        <div id="info2">
+            <h3>USEFUL LINKS</h3>
+            <ol>
+                <li><ion-icon name="checkmark-sharp"></ion-icon><a href="https://linncomputer.com/apple-warranty.html" target="_blank">Apple Warranty Terms & Conditions</a></li>
+                <li><ion-icon name="checkmark-sharp"></ion-icon><a href="https://linncomputer.com/giftcard.html" target="_blank">Gift Card</a></li>
+                <li><ion-icon name="checkmark-sharp"></ion-icon><a href="https://linncomputer.com/privacy-policy.html" target="_blank">Privacy Policy</a></li>
+                <li><ion-icon name="checkmark-sharp"></ion-icon><a href="https://linncomputer.com/user-guide.html" target="_blank">Linn IT Mart App User Guide</a></li>
+                <li><ion-icon name="checkmark-sharp"></ion-icon><a href="https://linncomputer.com/services.html" target="_blank">Our Service</a></li>
+            </ol>
+        </div>
+
+        <div id="info3">
+            <h3>BRANCHES</h3>
+            <ol>
+                <li><ion-icon name="location"></ion-icon>No.11/17, Bogyoke Road, Pyinmana</li>
+                <li><ion-icon name="location"></ion-icon>No.117, Thapyaegone Quarter, Nay Pyi Taw</li>
+                <li><ion-icon name="location"></ion-icon>Pa.(231), Myoma Market, Naypyitaw</li>
+                <li><ion-icon name="location"></ion-icon>No.OS-16, Nyarna Dipa Quarter, Ottarathiri Township</li>
+            </ol>
+        </div>
+    </main>
+
+    <footer>
+        Copyright &copy;2026 Linn IT Solution Co.,Ltd. All Rights Reserved.
+        <p>nanhtikelwin@gmail.com</p>
+    </footer>
+
+    <script src="project.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

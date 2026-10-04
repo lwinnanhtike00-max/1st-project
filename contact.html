@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Linn IT Solution Co., Ltd.</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.jpg" alt="Linn IT Solution Logo"></a>
+        </div>
+        <nav class="navigation">
+            <a href="index.html"><ion-icon name="home" id="home-icon"></ion-icon>Home</a>
+            <a href="about.html"><ion-icon name="people" id="about-icon"></ion-icon>About Us</a>
+            <a href="service.html"><ion-icon name="flash" id="service-icon"></ion-icon>Services</a>
+            <a href="contact.html" class="active"><ion-icon name="mail" id="contact-icon"></ion-icon>Contact</a>
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                <ion-icon name="moon-outline" id="theme-icon"></ion-icon>
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <h1>Contact Us</h1>
+        <p>Get in touch with our team for queries and support</p>
+    </section>    
+
+    <main class="container">
+        <div class="contact-grid">
+            <div class="contact-form-box">
+                <h2>Send Us a Message</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="c-name">Your Name</label>
+                        <input type="text" id="c-name" placeholder="Enter full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="c-email">Email Address</label>
+                        <input type="email" id="c-email" placeholder="example@mail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="c-phone">Phone Number</label>
+                        <input type="tel" id="c-phone" placeholder="09xxxxxxxxx" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="c-message">Message</label>
+                        <textarea id="c-message" rows="4" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+            <div class="map-box">
+                <h2>Our Location</h2>
+                <!-- Google Maps သို့မဟုတ် Map ပုံထည့်ရန် -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d60085.918048485764!2d96.13148154502268!3d19.73943378212282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1slinn%20it%20mart!5e0!3m2!1sen!2smm!4v1790788559884!5m2!1sen!2smm"" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <hr>
+
+    <main id="FtConatiner">
+        <div id="info1">
+            <h3>HEAD OFFICE</h3>
+            <ol>
+                <li><ion-icon name="call"></ion-icon>09 788 788 778</li>
+                <li><ion-icon name="location"></ion-icon>No.14/585, 4th Street, Paung Laung Quarter, Pyinmana.</li>
+                <li><ion-icon name="mail"></ion-icon>hello@linn.com.mm</li>
+                <li><ion-icon name="time"></ion-icon>Opening Hours: 8:00 AM-8:00 PM</li>
+            </ol>
+        </div>
+
+        <div id="info2">
+            <h3>USEFUL LINKS</h3>
+            <ol>
+                <li><ion-icon name="checkmark-sharp"></ion-icon><a href="https://linncomputer.com/apple-warranty.html" target="_blank">Apple Warranty Terms & Conditions</a></li>
+                <li><ion-icon name="checkmark-sharp"></ion-icon><a href="https://linncomputer.com/giftcard.html" target="_blank">Gift Card</a></li>
+                <li><ion-icon name="checkmark-sharp"></ion-icon><a href="https://linncomputer.com/privacy-policy.html" target="_blank">Privacy Policy</a></li>
+                <li><ion-icon name="checkmark-sharp"></ion-icon><a href="https://linncomputer.com/user-guide.html" target="_blank">Linn IT Mart App User Guide</a></li>
+                <li><ion-icon name="checkmark-sharp"></ion-icon><a href="https://linncomputer.com/services.html" target="_blank">Our Service</a></li>
+            </ol>
+        </div>
+
+        <div id="info3">
+            <h3>BRANCHES</h3>
+            <ol>
+                <li><ion-icon name="location"></ion-icon>No.11/17, Bogyoke Road, Pyinmana</li>
+                <li><ion-icon name="location"></ion-icon>No.117, Thapyaegone Quarter, Nay Pyi Taw</li>
+                <li><ion-icon name="location"></ion-icon>Pa.(231), Myoma Market, Naypyitaw</li>
+                <li><ion-icon name="location"></ion-icon>No.OS-16, Nyarna Dipa Quarter, Ottarathiri Township</li>
+            </ol>
+        </div>
+    </main>
+
+    <footer>
+        Copyright &copy;2026 Linn IT Solution Co.,Ltd. All Rights Reserved.
+        <p>nanhtikelwin@gmail.com</p>
+    </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script src="project.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
